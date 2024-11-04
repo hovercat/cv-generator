@@ -1,0 +1,136 @@
+{
+  "data1": {
+    "name": "Homer J. Simpson",
+    "desc1": "Nuclear Safety Inspector"
+  },
+  "data2": [
+    {
+      "icon": "fa-map-marker",
+      "text": "742 Evergreen Terrace, Springfield"
+    },
+    {
+      "icon": "fa-flag",
+      "text": "USA"
+    },
+    {
+      "icon": "fa-envelope-o",
+      "text": "<a href='mailto:homer.simpson@springfieldnuclear.com'>homer.simpson@springfieldnuclear.com</a>"
+    },
+    {
+      "icon": "fa-phone",
+      "text": "<a href='tel:5551234567'>555-123-4567</a>"
+    },
+    {
+      "icon": "fa-github",
+      "text": "<a href='https://github.com/homerjsimpsonreal'>github/homerjsimpsonreal</a>"
+    },
+    {
+      "icon": "fa-linkedin",
+      "text": "<a href='https://linkedin.com/in/homerjsimpsonreal'>linkedin/homerjsimpsonreal</a>"
+    }
+  ],
+  "jobs": [
+    {
+      "company": "Springfield Nuclear Power Plant",
+      "position": "Nuclear Safety Inspector",
+      "duration": "1989 - Present",
+      "logo": "springfield.jpg",
+      "description": [
+        "Monitors plant operations, occasionally hits control panels out of frustration.",
+        "Conducts safety drills (usually reluctantly) and oversees plant security."
+      ],
+      "tags": ["Safety Compliance", "Emergency Response", "Quality Assurance"]
+    },
+    {
+      "company": "Barney's Bowl-A-Rama",
+      "position": "Pin Monkey",
+      "duration": "1988 - 1989",
+      "logo": "pinpals.png",
+      "description": [
+        "Handled bowling alley equipment maintenance and helped customers with lanes and scoring.",
+        "Gained experience in customer service and machine troubleshooting."
+      ],
+      "tags": ["Customer Service", "Equipment Maintenance", "Troubleshooting"]
+    }
+  ],
+  "education": [
+        {
+      "name": "Nuclear Safety Training Program",
+      "desc1": "Certified Safety Technician",
+      "duration": "1988 - 1989",
+      "desc2": "Trained on nuclear safety protocols and emergency response.",
+      "thesis": {
+        "description": "“Button Pushing: A Theoretical Analysis of Simplified Nuclear Plant Operations” – An investigation into the simplification of complex control panels for easier safety management."
+      }
+    },
+    {
+      "name": "Springfield High School",
+      "desc1": "High School Diploma",
+      "duration": "1980 - 1984",
+      "desc2": "Studied general curriculum with a focus on PE and shop class",
+      "thesis": {
+        "description": "“Donuts and Society: A Nutritional Perspective” – An exploration of donut consumption trends among high school students and its effects on attention span and PE performance."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Donut Procurement Initiative",
+      "tags": ["Process Improvement", "Resource Management"],
+      "description": "Improved donut availability and distribution at the power plant.",
+      "link": "https://needmoredonut.com",
+      "icon": "fa-github"
+    },
+    {
+      "title": "Power Plant Efficiency Boost",
+      "tags": ["Energy Conservation", "Efficiency"],
+      "description": "Attempted to reduce energy costs by dimming lights and increasing nap times.",
+      "link": "https://energyplantthingy.com",
+      "icon": "fa-lightbulb-o"
+    },
+    {
+      "title": "Moe's Tavern Quiz Night Champion",
+      "tags": ["Trivia", "Memory Skills"],
+      "description": "Participated in and occasionally won local quiz nights at Moe's Tavern.",
+      "link": "https://moespubquiz.com",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Bart's Science Fair Volcano",
+      "tags": ["Creativity", "Parenting"],
+      "description": "Helped Bart with a baking soda and vinegar volcano for his school science fair.",
+      "link": "https://sciencefairwebsite.com",
+      "icon": "fa-flask"
+    }
+  ],
+  "hobbies": [
+    {
+      "title": "Bowling",
+      "tags": ["Hand-Eye Coordination", "Competitive Skills"],
+      "link": "",
+      "icon": "fa-globe",
+      "description": "Weekly bowler at Barney's Bowl-A-Rama."
+    },
+    {
+      "title": "Beer Tasting",
+      "tags": ["Social Engagement", "Taste Profiling"],
+      "link": "",
+      "icon": "fa-globe",
+      "description": "Regular patron of Moe's Tavern, known for his love of Duff Beer."
+    },
+    {
+      "title": "Watching TV",
+      "tags": ["Media Analysis", "Relaxation"],
+      "link": "",
+      "icon": "fa-tv",
+      "description": "An avid TV watcher, with a particular love for sitcoms and sports."
+    },
+    {
+      "title": "Eating Donuts",
+      "tags": ["Food Appreciation", "Culinary Exploration"],
+      "link": "",
+      "icon": "fa-coffee",
+      "description": "Has a deep passion for donuts, especially those with sprinkles."
+    }
+  ]
+}

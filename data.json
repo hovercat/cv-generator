@@ -1,0 +1,79 @@
+{
+  "data1": {
+    "name": "NAME",
+    "desc1": "JOB_DESC"
+  },
+  "data2": [
+    {
+      "icon": "fa-map-marker",
+      "text": "ADDRESS"
+    },
+    {
+      "icon": "fa-flag",
+      "text": "USA"
+    },
+    {
+      "icon": "fa-envelope-o",
+      "text": "<a href='mailto:EMAIL'>EMAIL</a>"
+    },
+    {
+      "icon": "fa-phone",
+      "text": "<a href='tel:1234567890'>1234567890</a>"
+    },
+    {
+      "icon": "fa-github",
+      "text": "<a href='[YOUR_GITHUB_URL]'>github/[INSERT]</a>"
+    },
+    {
+      "icon": "fa-linkedin",
+      "text": "<a href='[YOUR_LINKEDIN_URL]'>linkedin/[INSERT]r</a>"
+    }
+  ],
+  "jobs": [
+    {
+      "company": "",
+      "position": "'",
+      "duration": "",
+      "logo": "somepic.jpg",
+      "description": [
+        ""
+      ],
+      "tags": [""]
+    }
+  ],
+  "education": [
+    {
+      "name": "",
+      "desc1": "",
+      "duration": "",
+      "desc2": "",
+      "thesis": {
+        "description": ""
+      }
+    },
+    {
+      "name": "",
+      "desc1": "",
+      "duration": "",
+      "desc2": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "",
+      "tags": [],
+      "description": "",
+      "link": "",
+      "icon": "fa-github"
+    }
+  ],
+  "hobbies": [
+    {
+      "title": "",
+      "tags": [],
+      "link": "",
+      "icon": "fa-globe",
+      "description": ""
+    }
+  ]
+}

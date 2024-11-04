@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{data1.name}}'s CV</title>
+    <meta name="author" content="{{data1.name}}" />
+    <meta name="description" content="{{data1.name}}'s CV" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="cv.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" media='screen,print'>
+</head>
+<body>
+    <div class="container">
+        <div class="row app-header">
+            <div class="col app-header-title">
+                <div class="row-col">{{data1.name}}</div>
+                <div class="row-col subheading">{{data1.desc1}}</div>
+            </div>
+            <div class="col app-header-data">
+                <div class="float-end">
+                    <ul class="list-unstyled">
+                        {% for info in data2 %}
+                        <li><i class="info-icon fa {{info.icon}}" style="min-width: 20px;"></i>{{info.text}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="app-body">
+            <div class="app-career">
+                <div class="row-col section-title">
+                    Career
+                </div>
+                {% for job in jobs %}
+                <div class="app-job">
+                    <div class="row app-job-header">
+                        <div class="col-auto" style="display: block; margin: auto">
+                            <img src="logos/{{job.logo}}" style="max-width: 40px;"/>
+                        </div>
+                        <div class="col">
+                            <div class="row company-name" style="font-weight: bold">
+                                {{job.company}}
+                            </div>
+                            <div class="row job-title">
+                                {{job.position}}
+                            </div>
+                        </div>
+                        <!--<div class="col-auto company-name" style="font-weight: bold">
+                            {{job.company}}
+                        </div>
+                        <div class="col job-title">
+                            {{job.position}}
+                        </div>-->
+                        <div class="col-auto job-duration">
+                            {{job.duration}}
+                        </div>
+                    </div>
+                    <div class="row-col app-job-description">
+                        {% for line in job.description %}
+                        <div class="row-col">
+                            {{ line }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="row tags">
+                        {% for tag in job.tags %}
+                        <div class="col-auto tag">
+                            {{tag}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="app-education">
+                <div class="row-col section-title">
+                    Education
+                </div>
+                {% for school in education %}
+                <div class="app-school">
+                    <div class="row app-school-header">
+                        <div class="col-auto" style="font-weight: bold"><i class="fa fa-graduation-cap" style="min-width: 20px"></i> {{school.name}}</div>
+                        <div class="col school-desc1">{{school.desc1}}</div>
+                        <div class="col-auto float-end school-duration">
+                            {{school.duration}}
+                        </div>
+                    </div>
+                    <div class="row-col">
+                        {{school.desc2}}
+                    </div>
+                    {% if school.thesis %}
+                    <div class="row-col">
+                        <div class="row-col thesis-description">
+                            {{school.thesis.description}}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="app-projects-recr">
+                <div class="row section-title">
+                    <div class="col-6">
+                        Recreational Projects
+                    </div>
+                    <div class="col-6">
+                        Hobbies
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 app-projects">
+                        {% for project in projects %}
+
+                            <div class="row app-project">
+                                <div class="row-col" style="font-weight: bold">{{project.title}}</div>
+                                {% if project.link %}
+                                <div class="row-col app-project-link"><i class="fa {{project.icon}}"></i> <a href="{{project.link}}">{{project.link}}</a></div>
+                                {% endif %}
+                                <div class="row-col app-project-desc">{{project.description}}</div>
+
+                                <div class="row mini-tags">
+                                    {% for tag in project.tags %}
+                                    <div class="col-auto mini-tag">
+                                        {{tag}}
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="col-6">
+                        {% for hobby in hobbies %}
+
+                            <div class="row app-hobby">
+                                <div class="row-col" style="font-weight: bold">{{hobby.title}}</div>
+                                {% if hobby.link %}
+                                <div class="row-col app-hobby-link"><i class="fa {{hobby.icon}}"></i> <a href="{{hobby.link}}">{{hobby.link}}</a></div>
+                                {% endif %}
+                                <div class="row-col app-hobby-desc">{{hobby.description}}</div>
+
+                                <div class="row mini-tags">
+                                    {% for tag in hobby.tags %}
+                                    <div class="col-auto mini-tag">
+                                        {{tag}}
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
