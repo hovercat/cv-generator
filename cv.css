@@ -252,4 +252,9 @@ body {
         padding: 0;
         margin: 0;
     }
+
+    /* Avoid page break when printing */
+    .app-job, .app-school, .app-skill, .app-project, .app-hobby {
+        page-break-inside: avoid;
+    }
 }
