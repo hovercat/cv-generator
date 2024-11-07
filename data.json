@@ -75,5 +75,17 @@
       "icon": "fa-globe",
       "description": ""
     }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "icon": "fa-language",
+      "description": "German (Mother tongue), English (fluent)"
+    },
+    {
+      "title": "Drivers License",
+      "icon": "fa-car",
+      "description": "B"
+    }
   ]
 }

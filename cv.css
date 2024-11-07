@@ -81,7 +81,7 @@ body {
     margin-bottom: 30px;
 }
 
-.app-job, .app-school {
+.app-job, .app-school, .app-skill {
     margin-bottom: 5px;
     padding: 5px 0;
     border-bottom: 0px solid #eee;
@@ -138,7 +138,7 @@ body {
     text-align: right;
 }
 
-.app-job-description, .app-school .row-col {
+.app-job-description, .app-school .row-col, .app-skill-description {
     font-size: 0.95em;
     line-height: 1.5;
     margin-top: 10px;
