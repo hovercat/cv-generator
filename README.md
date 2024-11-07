@@ -1,16 +1,8 @@
 # Jinja2 CV Generator
-I use this CV template for making CV PDFs.
-The CSS is slightly different for PDFs, using higher contrast colors.
+This CV template is based on Jinja2 and can be used to generate your CV as HTML.
+PDFs can be created by printing the site to PDF.
 
-# Example
-
-[Homer J. Simpson's CV as HTML](output.html)
-
-[Homer J. Simpson's CV as PDF](output.pdf)
-
-![Homer J Simpson's CV Screenshot](homerjsimpson-cv.png)
-
-# Rendering
+# Usage
 Have a python environment ready with jinja installed
 ```
 python -m venv venv
@@ -23,3 +15,7 @@ python render.py [--data data.json] [--index index.html] [--output output.html]
 ```
 
 or just use `python render.py`
+
+
+# Example
+![Homer J Simpson's CV Screenshot](example_homer/homerjsimpson-cv.png)
