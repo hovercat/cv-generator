@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.4;
+}
+
+/* Container */
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.app-header {
+    border-bottom: 0px solid #444;
+    /*padding-bottom: 15px;*/
+    margin-bottom: 0px;
+}
+
+.app-projects{
+    border-right: 1px solid #ddd;
+}
+
+.app-header-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+}
+
+.app-header-title .subheading {
+    font-size: 0.7em;
+    font-weight: lighter;
+    color: #666;
+}
+
+.app-header-data {
+    font-size: 0.95em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.app-header-data ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.app-header-data li {
+    margin-bottom: 1px;
+}
+
+.info-icon {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Job and Education Blocks */
+.app-career, .app-education {
+    margin-bottom: 30px;
+}
+
+.app-job, .app-school, .app-skill {
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 0px solid #eee;
+}
+
+.app-school {
+    margin-bottom: 20px;
+}
+
+.app-job-header, .app-school-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-job-header img {
+    max-width: 30px;
+    height: auto;
+    margin-right: 0px;
+    border-radius: 1px;
+    display: block;
+    align-items: center;
+
+}
+
+.company-name {
+    font-weight: 700;
+    color: #222;
+    font-size: 1.1em;
+}
+
+.job-title, .school-desc1 {
+    font-size: 1em;
+    color: #666;
+}
+
+.app-project, .app-hobby{
+    margin-bottom: 20px;
+}
+
+.app-project-link, .app-hobby-link {
+    font-size: 0.95em;
+    color: #666;
+}
+.app-project-desc, .app-hobby-desc {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.job-duration, .school-duration {
+    font-size: 0.9em;
+    color: #888;
+    text-align: right;
+}
+
+.app-job-description, .app-school .row-col, .app-skill-description {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Tags */
+.tags, .mini-tags{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tag, .mini-tag {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.78em;
+    border-radius: 12px;
+    padding: 3px 10px;
+    margin: 4px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.mini-tags {
+    margin: 0;
+    margin-top:8px;
+}
+
+.mini-tag {
+    font-size: 0.76em;
+    border-radius: 8px;
+    padding: 2px 6px;
+    margin: 2px;
+    background-color: #3e96f1 /*#777;*/
+}
+
+/* Thesis Section */
+.thesis-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.thesis-description {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    /*.app-header, .app-career, .app-education {
+        text-align: center;
+    }
+    .app-header-data ul {
+        text-align: center;
+    }
+    .app-job-header, .app-school-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .job-duration, .school-duration {
+        text-align: left;
+    }*/
+}
+
+/* Print Styling */
+@media print {
+    /* Reset Margins, Shadows, and Backgrounds for Printing */
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .container {
+        box-shadow: none;
+        background-color: #fff;
+        border: none;
+    }
+
+    /* Ensure Fonts and Colors Translate Well to Black & White */
+    .app-header-title, .company-name, .section-title, .tag, .mini-tag {
+        color: #000;
+    }
+
+    .tag, .mini-tag {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* Remove Any Colors That May Not Translate in Print */
+    .app-header-title .subheading,
+    .app-header-data,
+    .job-title, .school-desc1,
+    .app-project-link, .app-hobby-link,
+    .app-project-desc, .app-hobby-desc,
+    .job-duration, .school-duration,
+    .app-job-description, .row-col,
+    .thesis-title, .thesis-description {
+        color: #000;
+    }
+
+    /* Hide unnecessary elements if any */
+    .info-icon {
+        display: none;
+    }
+
+    /* Reset Margins and Padding for Better Print Layout */
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Avoid page break when printing */
+    .app-job, .app-school, .app-skill, .app-project, .app-hobby {
+        page-break-inside: avoid;
+    }
+}

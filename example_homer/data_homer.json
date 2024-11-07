@@ -132,5 +132,17 @@
       "icon": "fa-coffee",
       "description": "Has a deep passion for donuts, especially those with sprinkles."
     }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "icon": "fa-language",
+      "description": "English (Mother tongue), Spanish (A1)"
+    },
+    {
+      "title": "Drivers License",
+      "icon": "fa-car",
+      "description": "Cars, Trucks, Motorcycles"
+    }
   ]
 }
